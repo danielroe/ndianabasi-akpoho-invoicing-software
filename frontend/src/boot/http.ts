@@ -6,7 +6,7 @@ import { boot } from 'quasar/wrappers';
 import { HttpError } from 'src/store/types';
 import axios, { AxiosInstance } from 'axios';
 
-declare module '@vue/runtime-core' {
+declare module 'vue' {
   interface ComponentCustomProperties {
     $axios: AxiosInstance;
   }

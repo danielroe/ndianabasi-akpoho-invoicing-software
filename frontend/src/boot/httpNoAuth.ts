@@ -7,7 +7,7 @@ import { App } from 'vue';
 import { Notify } from 'quasar';
 import { HttpError } from 'src/store/types';
 
-declare module '@vue/runtime-core' {
+declare module 'vue' {
   interface ComponentCustomProperties {
     $axios: AxiosInstance;
   }

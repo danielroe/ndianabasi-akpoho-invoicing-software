@@ -2,7 +2,7 @@
 import axios, { AxiosInstance } from 'axios';
 import { useStore } from '../store/index';
 
-declare module '@vue/runtime-core' {
+declare module 'vue' {
   interface ComponentCustomProperties {
     $axios: AxiosInstance;
   }
